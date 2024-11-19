@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Warna background, bisa diubah -->
+    <stroke
+
+        android:width="2dp"
+        android:color="#000000" /> <!-- Warna dan ketebalan border -->
+    <corners android:radius="18dp" /> <!-- Sudut border (opsional) -->
+</shape>
