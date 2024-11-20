@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-11-19T06:48:02.784840Z">
+        <DropdownSelection timestamp="2024-11-20T08:24:58.310777500Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\MSI Cyborg 15\.android\avd\Medium_Phone_API_35.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=5DNJDUUSAAKZ4HCY" />
             </handle>
           </Target>
         </DropdownSelection>

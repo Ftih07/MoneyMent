@@ -46,11 +46,12 @@
 
     <LinearLayout
         android:id="@+id/formLogin"
-        android:layout_width="413dp"
-        android:layout_height="546dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#FFFFFF"
         android:orientation="vertical"
         android:paddingHorizontal="40dp"
+        android:layout_marginTop="20dp"
         android:paddingTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +131,8 @@
             android:textStyle="bold"
             app:backgroundTint="@null"
             android:textSize="20dp"
-            ></Button>
+            android:id="@+id/btnSignUp">
+        </Button>
 
         <TextView
             android:id="@+id/signUpText4"
