@@ -32,9 +32,18 @@ class Home : AppCompatActivity() {
             when (it.itemId) {
                 R.id.home -> setCurrentFragment(firstFragment)
                 R.id.note -> setCurrentFragment(secondFragment)
-                R.id.add -> setCurrentFragment(thirdFragment)
-                R.id.analyst -> setCurrentFragment(fourthFragment)
-                R.id.user -> setCurrentFragment(fifthFragment)
+                R.id.add -> {
+                    val intent = Intent(this, Catat::class.java)
+                    startActivity(intent)
+                }
+                R.id.analyst -> {
+                    val intent = Intent(this, Statistik::class.java)
+                    startActivity(intent)
+                }
+                R.id.user -> {
+                    val intent = Intent(this, Profile::class.java)
+                    startActivity(intent)
+                }
             }
             true
         }
