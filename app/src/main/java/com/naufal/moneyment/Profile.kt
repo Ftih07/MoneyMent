@@ -49,6 +49,12 @@ class Profile : AppCompatActivity() {
             }
             true
         }
+
+        binding.aboutUs.setOnClickListener(){
+            val intent = Intent(this, AboutUs::class.java)
+            startActivity(intent)
+        }
+
     }
     private fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
