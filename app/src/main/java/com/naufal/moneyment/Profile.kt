@@ -55,6 +55,11 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.logoutbtn.setOnClickListener {
+            val intent = Intent(this, LoginPage::class.java)
+            startActivity(intent)
+        }
+
     }
     private fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {

@@ -88,7 +88,7 @@
         android:background="@drawable/bgprofile"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,11 +101,10 @@
             android:layout_marginVertical="10dp"
             android:background="@drawable/whiterectangle"
             android:drawableLeft="@drawable/editprofilepen"
-            app:backgroundTint="@null"
+            android:drawableRight="@drawable/arrowgray"
             android:text="Edit Profile"
             android:textColor="#000000"
-            android:drawableRight="@drawable/arrowgray"
-            ></Button>
+            app:backgroundTint="@null"></Button>
 
         <Button
             android:id="@+id/aboutUs"
@@ -113,24 +112,25 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
-            android:drawableLeft="@drawable/aboutus"
             android:background="@drawable/whiterectangle"
-            app:backgroundTint="@null"
+            android:drawableLeft="@drawable/aboutus"
+            android:drawableRight="@drawable/arrowgray"
             android:text="Tentang Kami"
             android:textColor="#000000"
-            android:drawableRight="@drawable/arrowgray"></Button>
+            app:backgroundTint="@null"></Button>
 
         <Button
+            android:id="@+id/logoutbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
             android:background="@drawable/whiterectangle"
-            app:backgroundTint="@null"
             android:drawableLeft="@drawable/logouticon"
+            android:drawableRight="@drawable/arrowgray"
             android:text="Logout"
             android:textColor="#000000"
-            android:drawableRight="@drawable/arrowgray"></Button>
+            app:backgroundTint="@null"></Button>
     </LinearLayout>
 
 
@@ -151,9 +151,10 @@
         android:layout_height="wrap_content"
         android:background="#FCBD02"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:menu="@menu/bottom_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
