@@ -30,8 +30,14 @@ class Home : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> setCurrentFragment(firstFragment)
-                R.id.note -> setCurrentFragment(secondFragment)
+                R.id.home -> {
+                    val intent = Intent(this, Home::class.java)
+                    startActivity(intent)
+                }
+                R.id.note -> {
+                    val intent = Intent(this, NoteActivity::class.java)
+                    startActivity(intent)
+                }
                 R.id.add -> {
                     val intent = Intent(this, Catat::class.java)
                     startActivity(intent)
